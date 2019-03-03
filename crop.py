@@ -10,7 +10,7 @@ if not os.path.exists(croppedFolder):
     os.makedirs(croppedFolder)
 
 # This is the URL
-url = 'http://croppola.com/croppola/image.jpg?aspectRatio=16:9&maximumHeight=90%&algorithm=croppola'
+url = 'http://croppola.com/croppola/image.jpg?aspectRatio=1:1&maximumHeight=90%&algorithm=croppola'
 
 # Process all pictures
 for pictureFile in os.listdir(originalFolder):
@@ -24,4 +24,4 @@ for pictureFile in os.listdir(originalFolder):
         time.sleep(5)	# let other people crop
     else:
         print('Error ' + res.status_code)
-        break
+
