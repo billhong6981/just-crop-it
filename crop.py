@@ -17,7 +17,7 @@ for pictureFile in os.listdir(originalFolder):
     print(pictureFile)
     data = open(originalFolder + '/' + pictureFile, 'rb')
     res = requests.post(url, data=data, headers={'User-Agent' : 'py'})
-    data.close();
+    data.close()
     if res.status_code == 200:
         f = open(croppedFolder + '/' + pictureFile, 'wb')
         f.write(res.content)
