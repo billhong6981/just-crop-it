@@ -21,13 +21,13 @@ Before running program, copy your chosen photos to be cropped into the `original
 
 programmatically implement remainder of alexa's requirements:
 
-[ ] prompt user to input name at commandline and use to label photos
+- [x] prompt user to input name at commandline and use to label photos
 > Please also label these photos as your name in the Intranet followed by an index from 0 to however many photos you have (ex. `AlexaOrrico0.jpg`).
 
-[ ] include check for file extension to be either `jpg` or `png`
+- [x] include check for file extension to be either `jpg` or `png`
 
-[ ] check size of cropped photo and compress if larger than 2MB
+- [ ] check size of cropped photo and compress if larger than 2MB
 > ...photos of yourself that are *LESS* than 2 MB...
 
-[ ] send email with cropped photos as attachments upon completion
+- [ ] send email with cropped photos as attachments upon completion
 > please use the subject line `Face Verification`
